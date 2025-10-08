@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*======= COLOR ======*/
+  /* PRIMARY */
+  --Blue-100: hsl(225, 100%, 94%);
+  --Blue-700: hsl(245, 75%, 52%);
+  /* NEUTRAL */
+  --Blue-50: hsl(225, 100%, 98%);
+  --Gray-600: hsl(224, 23%, 55%);
+  --Blue-950: hsl(223, 47%, 23%);
+  --White: hsl(0, 0%, 100%);
+
+  /*======= FONT ======*/
+  font-size: 62.5%;
+  --font-size: 1.6rem;
+  --font-size-large: 2.4rem;
+  --font-weight: 400;
+  --font-weight-bold: 700;
+  --font-weight-bolder: 900;
+  --font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Blue-100);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  width: 400px;
+  height: auto;
+  border-radius: 2rem;
+  font-family: var(--font-family);
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.text {
+  text-align: center;
+  padding: 2.5rem;
+  font-size: var(--font-size);
+}
+.text h1 {
+  color: var(--Blue-950);
+  font-weight: var(--font-weight-bolder);
+  font-size: var(--font-size-large);
+}
+.text p {
+  color: var(--Gray-600);
+  font-weight: var(--font-weight);
+  line-height: 1.6;
+  max-width: 34rem;
+  margin: 2rem auto;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+.plan-details {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plan-name {
+  font-weight: var(--font-weight-bold);
+  color: var(--Blue-950);
+}
+.plan-price {
+  margin-left: -0.5rem;
+  font-weight: var(--font-weight);
+  color: var(--Gray-600);
+}
+button {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--Blue-700);
+  color: var(--White);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
