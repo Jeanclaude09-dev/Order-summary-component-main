@@ -175,6 +175,10 @@ button:active {
   .text {
     padding: 2rem;
   }
+  .plan {
+    gap: 1.5rem;
+    font-size: var(--font-size-small);
+  }
 }
 
 @media (max-width: 24em) {
