@@ -176,3 +176,9 @@ button:active {
     padding: 2rem;
   }
 }
+
+@media (max-width: 23em) {
+  .card {
+    width: 100%;
+  }
+}
